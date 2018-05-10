@@ -16,6 +16,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Quicksort): Quicksort (sometimes 
 
 There are several partition schemes, currently I have implemented these ones:
 * [Lomuto partition scheme](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Quicksort/quicksort_lomuto_partition_scheme.py)
+* [Hoare partition scheme](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Quicksort/quicksort_hoare_partition_scheme.py)
 
 ## Special Thanks
 First, I want to say thank you to [The Algorithms](https://github.com/TheAlgorithms), because exploring GitHub, I found their repo, where they were doing something similar to this repo (you can check their repo [here](https://github.com/TheAlgorithms/Python).
