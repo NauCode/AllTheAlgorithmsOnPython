@@ -1,5 +1,5 @@
 #Algorythm: Quicksort (sometimes called partition-exchange sort)
-#Description: In this file we are using the Lomuto partition scheme,
+#Description: In this file we are using the Hoare partition scheme,
 #you can seen other implementation in the other quicksort files
 #Source link: I saw the algorithm explanation on https://en.wikipedia.org/wiki/Quicksort
 #Use: It is used to sort, it is a comparison sort
@@ -33,25 +33,30 @@ def swapValues(array,x,y):
 #Return: 1, an integer which is an index
 #Example: ret_value = partition(sampleArray,0,20)
 def partition(array,min_index,max_index):
-    pivot_value = array[max_index]
+    pivot_value = array[min_index]
     i = min_index - 1
-    #A little note, in the Wikipedia site says this for loop should be
-    #something like: 'for j in range(min_index,max_index-1)'
-    #but take care of something, range() on Python doesn't include
-    #the maximum element in the range, it means, we are doing
-    #in reality: 'for j in range(min_index,max_index-2)
-    #So I had to change it to 'for j in range(min_index,max_index)'
-    #to include the max_index-1 value in the for loop
-    for j in range(min_index,max_index):
-        if array[j] <= pivot_value:
-            i = i+1
-            swapValues(array,i,j)
-    swapValues(array,i+1,max_index)
-    return i+1
+    j = max_index + 1
+
+    while True:
+
+        #Since Python doesn't have a 'do'...'while' loop,
+        #we emulate it with something like this
+        i = i + 1
+        while array[i] < pivot_value:
+            i = i +1
+
+        j = j - 1
+        while array[j] > pivot_value:
+            j = j -1
+
+        if i >= j:
+            return j
+
+        swapValues(array,i,j)
 
 #Name: quicksort
 #Description: The algorithm itself, basically it is the Python implementation
-#of the Lomuto partition scheme of Quicksort algorithm
+#of the Hoare partition scheme of Quicksort algorithm
 #Arguments: 3; array is the array where the values are,
 #              min_index is the minimum index of the array (or the min
 #              index we want to sort)
@@ -63,7 +68,7 @@ def partition(array,min_index,max_index):
 def quicksort(array,min_index,max_index):
     if min_index < max_index:
         p=partition(array,min_index,max_index)
-        quicksort(array,min_index,p-1)
+        quicksort(array,min_index,p)
         quicksort(array,p+1,max_index)
 
 
