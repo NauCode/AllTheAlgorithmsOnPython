@@ -18,6 +18,7 @@ There are several partition schemes, currently I have implemented these ones:
 * [Lomuto partition scheme](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Quicksort/quicksort_lomuto_partition_scheme.py)
 * [Hoare partition scheme](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Quicksort/quicksort_hoare_partition_scheme.py)
 
+
 ### Merge Sort
 ![Merge Sort animated example](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
