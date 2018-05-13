@@ -34,6 +34,25 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Merge_sort): In computer science,
 There are several implementations, currently I have implemented these ones:
 * [Binary Merge Sort](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Merge%20Sort/merge_sort.py)
 
+
+### Bubble Sort
+![Bubble Sort animated example](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png)
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort): Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+
+**Properties**
+* Worst case performance	O(n^2)
+* Best case performance	O(n)
+* Average case performance	O(n^2)
+
+###### View it in action [here](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
+
+There are several implementations, currently I have implemented these ones:
+* [Basic Bubble Sort](https://github.com/NautaDev/AllTheAlgorithmsOnPython/blob/master/Sorting/Bubble/bubble_sort.py)
+* ~~[Optimized Bubble Sort](#)~~ (Soon)
+
+
+
 ## Special Thanks
 First, I want to say thank you to [The Algorithms](https://github.com/TheAlgorithms), because exploring GitHub, I found their repo, where they were doing something similar to this repo (you can check their repo [here](https://github.com/TheAlgorithms/Python).
 
